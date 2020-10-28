@@ -43,5 +43,4 @@ public class NewsAPI : MonoBehaviour
         XDocument doc = XDocument.Parse(apiReturn);
         XAttribute _currentTemp = doc.Element("current").Element("temperature").Attribute("value");
         currentTemp = Double.Parse(_currentTemp.Value);
-
     }*/
