@@ -6,6 +6,7 @@ using UnityEngine;
 public class NextDay : MonoBehaviour
 {
     public int day = 1;
+    float timer;
     public DateTime date = DateTime.Today;
     // Start is called before the first frame update
     void Start()
@@ -14,16 +15,22 @@ public class NextDay : MonoBehaviour
     }
     void Update()
     {
-        Click();
+        GoToNextDay();
     }
-    void Click()
+    void GoToNextDay()
     {
-        if (Input.GetAxis("Fire1") > 0)
+        timer += Time.deltaTime;
+        if (timer >= 1)
         {
-            day++;
-            date.AddDays(1);
-            Debug.Log("Good Morning, Today is: " + date.ToString());
-            Debug.Log("day int: " + day.ToString());
+            timer = 0;
+            if (Input.GetKey(KeyCode.Space))
+            {
+                day++;
+                date = date.AddDays(1);
+                Debug.Log("It is next DAY!, Today is now: " + date.ToString());
+                Debug.Log("day int: " + day.ToString());
+            }
         }
     }
+
 }

@@ -5,8 +5,21 @@ using UnityEngine;
 public class OpenNewspaper : MonoBehaviour
 {
     public GameObject newspaper;
-    void OnMouseDown()
+    float timer;
+    void Update()
     {
-        newspaper.SetActive(true);
+        OpenPaper();
+    }
+    void OpenPaper()
+    {
+        timer += Time.deltaTime;
+        if (timer >= 1)
+        {
+            timer = 0;
+            if (Input.GetKey(KeyCode.X))
+            {
+                newspaper.SetActive(true);
+            }
+        }
     }
 }
