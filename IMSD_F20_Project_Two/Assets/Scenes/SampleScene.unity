@@ -121,6 +121,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &150888146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9ccea82a51e7410f8cd34417961c168,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478633750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &150888148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150888146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba71ad6fcc8eb442afa231ef39209b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newspaper: {fileID: 178223713}
 --- !u!1 &178223713
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 178223714}
+  - component: {fileID: 178223715}
   m_Layer: 0
   m_Name: Newspaper
   m_TagString: Untagged
@@ -153,6 +173,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178223715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178223713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0330575d2304c4cabe0a694e55eef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newspaper: {fileID: 178223713}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +911,25 @@ RectTransform:
   m_AnchoredPosition: {x: -31.450092, y: -4.9758735}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1897143426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 15bb0c7acc8864142926c0d02b6cc9b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967434108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1897143428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897143426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec185afed925a514bb982e2c39d3725e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: 1
 --- !u!1001 &1967434108
 PrefabInstance:
   m_ObjectHideFlags: 0
