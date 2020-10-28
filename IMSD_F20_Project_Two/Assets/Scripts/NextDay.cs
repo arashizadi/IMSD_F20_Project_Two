@@ -27,7 +27,7 @@ public class NextDay : MonoBehaviour
             {
                 day++;
                 date = date.AddDays(1);
-                Debug.Log("It is next DAY!, Today is now: " + date.ToString());
+                Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
                 Debug.Log("day int: " + day.ToString());
             }
         }
