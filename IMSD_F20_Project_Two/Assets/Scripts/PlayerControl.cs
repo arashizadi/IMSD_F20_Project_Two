@@ -19,13 +19,6 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-/*        if (name == "Bed")
-            nextDay.GoToNextDay();
-        else if (name == "NewspaperOnTable")
-            openNewspaper.OpenPaper();
-        else if (name == "Newspaper")
-            closeNewspaper.ClosePaper();
-        else*/
             Debug.Log(name);
     }
 }

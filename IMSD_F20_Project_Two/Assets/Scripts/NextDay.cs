@@ -16,22 +16,18 @@ public class NextDay : MonoBehaviour
     }
     void Update()
     {
-        GoToNextDay();
     }
     public void GoToNextDay()
     {
-        timer += Time.deltaTime;
-        if (timer >= 1)
-        {
-            timer = 0;
-            if (Input.GetKey(KeyCode.Space))
-            {
-                day++;
-                date = date.AddDays(1);
-                Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
-                Debug.Log("day int: " + day.ToString());
-            }
-        }
+        day++;
+        date = date.AddDays(1);
+        Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
+        Debug.Log("day int: " + day.ToString());
+    
+    }
+    void OnMouseDown()
+    {
+        GoToNextDay();
     }
 
 }

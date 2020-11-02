@@ -11,4 +11,8 @@ public class CloseNewspaper : MonoBehaviour
     {
         newspaper.SetActive(false);
     }
+    void OnMouseDown()
+    {
+        ClosePaper();
+    }
 }

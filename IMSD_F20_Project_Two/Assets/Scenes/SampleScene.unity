@@ -150,8 +150,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 11.645921, y: 0.764431, z: 1}
+  m_Center: {x: 0.07492399, y: -0.58446693, z: 0}
 --- !u!1 &150888146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9ccea82a51e7410f8cd34417961c168,
@@ -171,18 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newspaper: {fileID: 178223713}
---- !u!114 &150888149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150888146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef02637955227ee40b1625bb9f61cb97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &150888150
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -194,8 +182,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.2891428, y: 1, z: 0.99999696}
+  m_Center: {x: -0.0101384185, y: 0, z: 8.322676e-12}
 --- !u!1 &178223713
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +193,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 178223714}
-  - component: {fileID: 178223715}
   - component: {fileID: 178223716}
   m_Layer: 0
   m_Name: Newspaper
@@ -221,28 +208,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178223713}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.430092, y: 9.615873, z: 4.8818474}
+  m_LocalRotation: {x: -0.15074313, y: 0, z: 0, w: 0.98857296}
+  m_LocalPosition: {x: 31.430092, y: 17.01, z: -12.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1862846528}
   - {fileID: 2013828761}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &178223715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178223713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a0330575d2304c4cabe0a694e55eef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newspaper: {fileID: 178223713}
+  m_LocalEulerAnglesHint: {x: -17.34, y: 0, z: 0}
 --- !u!65 &178223716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -252,9 +226,41 @@ BoxCollider:
   m_GameObject: {fileID: 178223713}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &620643989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f9ccea82a51e7410f8cd34417961c168,
+    type: 3}
+  m_PrefabInstance: {fileID: 1797613635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &620643990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620643989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0330575d2304c4cabe0a694e55eef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newspaper: {fileID: 178223713}
+--- !u!65 &620643992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620643989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.63, y: 0.48, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -638,8 +644,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.734019, y: 4.85, z: 1}
+  m_Center: {x: -0.59124905, y: -1.49, z: 0}
 --- !u!1001 &1719542464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1034,7 +1040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 29.701002, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31.450092, y: -4.9758735}
+  m_AnchoredPosition: {x: -31.450092, y: -5.13}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1897143426 stripped
@@ -1043,6 +1049,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1967434108}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1897143428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897143426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec185afed925a514bb982e2c39d3725e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day: 1
+  dateString: 
 --- !u!65 &1897143429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1054,20 +1074,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1897143430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897143426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef02637955227ee40b1625bb9f61cb97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Size: {x: 0.45000005, y: 0.3629148, z: 0.2608257}
+  m_Center: {x: -4.250439e-17, y: 0.13145748, z: 0.00831422}
 --- !u!1 &1966609988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479137908180158667, guid: 15bb0c7acc8864142926c0d02b6cc9b3,
+        type: 3}
+      propertyPath: m_Name
+      value: B3dBase
       objectReference: {fileID: 0}
     - target: {fileID: 6855044097730474763, guid: 15bb0c7acc8864142926c0d02b6cc9b3,
         type: 3}

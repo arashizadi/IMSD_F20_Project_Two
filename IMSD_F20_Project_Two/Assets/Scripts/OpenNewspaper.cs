@@ -10,4 +10,8 @@ public class OpenNewspaper : MonoBehaviour
     {
         newspaper.SetActive(true);
     }
+    void OnMouseDown()
+    {
+        OpenPaper();
+    }
 }
