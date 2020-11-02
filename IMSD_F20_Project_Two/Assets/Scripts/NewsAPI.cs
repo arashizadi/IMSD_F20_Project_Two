@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 
 public class NewsAPI : MonoBehaviour
 {
-    string apiReturn, limit = "2", source = "bbc";
+    string apiReturn, limit = "1", source = "bbc";
     NextDay day;
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,8 @@ public class NewsAPI : MonoBehaviour
     }
     IEnumerator GetNews()
     {
-        UnityWebRequest www = UnityWebRequest.Get("http://api.mediastack.com/v1/news?access_key=6817e29d6cd6cb31ebe53d5e74813df9&sources=" + 
-            source + "&limit=" + limit);        // + "&date=" + day.date.ToString("yyyy-MM-dd")
+        UnityWebRequest www = UnityWebRequest.Get("http://api.mediastack.com/v1/news?access_key=b4967675fe82e7e0000b21c76fb23797&sources=" + 
+            source + "&limit=" + limit + "&date=" + "2020-11-02");        // + "&date=" + day.date.ToString("yyyy-MM-dd")
 
         yield return www.SendWebRequest();
         if (!www.isNetworkError && !www.isHttpError)
