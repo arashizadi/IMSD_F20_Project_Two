@@ -6,20 +6,9 @@ public class CloseNewspaper : MonoBehaviour
 {
     float timer;
     public GameObject newspaper;
-    void Update()
+
+    public void ClosePaper()
     {
-        ClosePaper();
-    }
-    void ClosePaper()
-    {
-        timer += Time.deltaTime;
-        if (timer >= 1)
-        {
-            timer = 0;
-            if (Input.GetKey(KeyCode.C))
-            {
-                newspaper.SetActive(false);
-            }
-        }
+        newspaper.SetActive(false);
     }
 }

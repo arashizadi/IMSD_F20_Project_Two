@@ -2,28 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.UI;
-using System.Xml.Linq;
 
 public class NewsAPI : MonoBehaviour
 {
-    string apiReturn;
-
+    string apiReturn, limit = "2", source = "bbc";
+    NextDay day;
     // Start is called before the first frame update
     void Start()
     {
-        
+        day = GetComponent<NextDay>();
+        StartCoroutine(GetNews());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
     IEnumerator GetNews()
     {
-        UnityWebRequest www = UnityWebRequest.
-            Get("http://api.openweathermap.org/data/2.5/weather?zip=" + "zip" + "&mode=xml&APPID=" + "key");
+        UnityWebRequest www = UnityWebRequest.Get("http://api.mediastack.com/v1/news?access_key=6817e29d6cd6cb31ebe53d5e74813df9&sources=" + 
+            source + "&limit=" + limit);        // + "&date=" + day.date.ToString("yyyy-MM-dd")
+
         yield return www.SendWebRequest();
         if (!www.isNetworkError && !www.isHttpError)
         {

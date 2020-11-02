@@ -7,7 +7,8 @@ public class NextDay : MonoBehaviour
 {
     public int day = 1;
     float timer;
-    public DateTime date = DateTime.Today;
+    public string dateString;
+    public DateTime date = DateTime.Now;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class NextDay : MonoBehaviour
     {
         GoToNextDay();
     }
-    void GoToNextDay()
+    public void GoToNextDay()
     {
         timer += Time.deltaTime;
         if (timer >= 1)
