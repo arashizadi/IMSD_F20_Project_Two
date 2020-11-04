@@ -6,13 +6,14 @@ using UnityEngine.UI;
 
 public class NewspaperScript : MonoBehaviour
 {
-    public Button factCheck, scrollUp, scrollDown;
+    public Button factCheck, scrollUp, scrollDown, close;
     public TMP_InputField userText;
     public GameObject newspaperObject;
     public TMP_Text newspaperText;
+    public NextDay nextDay;
 
-    int level = 1, _level = 0;
-    int numberOfFailedAttempts = 0;
+    public int level = 1;
+    int numberOfFailedAttempts = 0, _level = 0;
     int page = 1, _page = 0;
     bool lastPage;
     string content;
@@ -21,7 +22,7 @@ public class NewspaperScript : MonoBehaviour
         factCheck.onClick.AddListener(Check);
         scrollUp.onClick.AddListener(ScrollUp);
         scrollDown.onClick.AddListener(ScrollDown);
-        Debug.Log("Pick up the NEWSPAPER on the table. It's from NY Types...");
+        close.onClick.AddListener(Close);
     }
 
     // Update is called once per frame
@@ -62,7 +63,7 @@ public class NewspaperScript : MonoBehaviour
                         || (level == 2 && userText.text == "4")
                         || (level == 3 && userText.text == "9"))
                     {
-                        Debug.Log("Well Done | You have just one step ");
+                        Debug.Log("Well Done | You are now one step closer to understanding news!");
                         level++;
                         if (numberOfFailedAttempts == 0)
                             Debug.Log("Bravo, In your first attempt you were able to win this round. You are trully a wise person.");
@@ -72,12 +73,16 @@ public class NewspaperScript : MonoBehaviour
                         Debug.Log("Your current Level: " + level);
                         newspaperObject.SetActive(false);
                         numberOfFailedAttempts = 0;
+                        userText.text = "Guess The Amount";
                     }
 
                     else
                     {
                         numberOfFailedAttempts++;
-                        Debug.Log("You did not answer correctly. Please try again.");
+                        if (nextDay.day == level)
+                        {
+                            Debug.Log("You did not answer correctly. Please try again.");
+                        }
                         if (numberOfFailedAttempts > 9)
                             Debug.Log("Stop Looking, Open Your Eyes and Start Seeing. You must shift your awareness completely and watch the reality from the unbias point of view.");
                         if (numberOfFailedAttempts > 19)
@@ -212,6 +217,11 @@ public class NewspaperScript : MonoBehaviour
         }
 
         yield return newspaperText.text = content;    
+    }
+
+    void Close()
+    {
+        newspaperObject.SetActive(false);
     }
 
 }

@@ -11,7 +11,7 @@ public class NewsAPI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(date);
+        //Debug.Log(date);
         //StartCoroutine(GetNews());
 
     }
