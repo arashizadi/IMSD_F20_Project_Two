@@ -8,11 +8,12 @@ public class NewspaperScript : MonoBehaviour
 {
     public Button factCheck, scrollUp, scrollDown;
     public TMP_InputField userText;
-    public GameObject newspaperObject, newspaperText;
+    public GameObject newspaperObject;
+    public TMP_Text newspaperText;
 
     int level = 1;
     int numberOfFailedAttempts = 0;
-    int page = 1, _page = 1;
+    int page = 1, _page = 0;
     bool lastPage;
     string content;
     void Start()
@@ -127,8 +128,7 @@ public class NewspaperScript : MonoBehaviour
             if (page != 8)
                 lastPage = false;
         }
-        yield return content;
-
+        yield return newspaperText.text = content;    
     }
 
 }

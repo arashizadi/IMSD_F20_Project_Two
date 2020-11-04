@@ -395,6 +395,7 @@ MonoBehaviour:
   scrollDown: {fileID: 612187068}
   userText: {fileID: 1545963062}
   newspaperObject: {fileID: 178223713}
+  newspaperText: {fileID: 1862846525}
 --- !u!65 &178223716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2862,7 +2863,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 20
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
