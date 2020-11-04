@@ -391,7 +391,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factCheck: {fileID: 1360608826}
+  scrollUp: {fileID: 651995465}
+  scrollDown: {fileID: 612187068}
   userText: {fileID: 1545963062}
+  newspaperObject: {fileID: 178223713}
 --- !u!65 &178223716
 BoxCollider:
   m_ObjectHideFlags: 0
