@@ -353,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178223714}
   - component: {fileID: 178223716}
+  - component: {fileID: 178223715}
   m_Layer: 0
   m_Name: Newspaper
   m_TagString: Untagged
@@ -377,6 +378,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 10.82, y: 0, z: 0}
+--- !u!114 &178223715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178223713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5851708e496cfd24fba90d326de06394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factCheck: {fileID: 1360608826}
+  userText: {fileID: 1545963062}
 --- !u!65 &178223716
 BoxCollider:
   m_ObjectHideFlags: 0
