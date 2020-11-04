@@ -8,11 +8,16 @@ public class NextDay : MonoBehaviour
     public int day = 1;
     float timer;
     public string dateString;
-    public DateTime date = DateTime.Now;
+
+
     // Start is called before the first frame update
+    void Awake()
+    {
+
+    }
     void Start()
     {
-        Debug.Log("Today is: " + date.ToString());
+        //Debug.Log("Today is: " + date.ToString());
     }
     void Update()
     {
@@ -20,8 +25,8 @@ public class NextDay : MonoBehaviour
     public void GoToNextDay()
     {
         day++;
-        date = date.AddDays(1);
-        Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
+        //date = date.AddDays(1);
+        //Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
         Debug.Log("day int: " + day.ToString());
     
     }
