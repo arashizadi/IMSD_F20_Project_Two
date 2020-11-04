@@ -30,7 +30,7 @@ public class NextDay : MonoBehaviour
         if (newspaper.level != day)
         {
             day++;
-            //date = date.AddDays(1);
+            date = date.AddDays(1);
             //Debug.LogWarning("It is next DAY!, Today is now: " + date.ToString());
             Debug.Log("Good Night!");
             date.AddDays(1);
